@@ -4,9 +4,10 @@ import com.lokesh.ai_expense_analyzer.entity.Expense;
 import com.lokesh.ai_expense_analyzer.service.ExpenseService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.List;
-
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/expenses")
 @RequiredArgsConstructor
